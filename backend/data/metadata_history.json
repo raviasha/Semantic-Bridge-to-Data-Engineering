@@ -1,0 +1,110 @@
+[
+  {
+    "id": 5,
+    "timestamp": 1774845379.076549,
+    "table_name": "benefit_plan_options",
+    "column_name": "annual_employer_cost",
+    "field": "business_name",
+    "old_value": "Annual Employer Premium Cost",
+    "new_value": "Annual Employer Premium Cost",
+    "source": "nl-update",
+    "version": 2
+  },
+  {
+    "id": 6,
+    "timestamp": 1774845379.078801,
+    "table_name": "benefit_plan_options",
+    "column_name": "annual_employer_cost",
+    "field": "business_description",
+    "old_value": "The total annual amount the employer pays for this coverage option. Key component of benefits expense budgeting.",
+    "new_value": "The total annual amount the employer pays for this coverage option, including a 5% government tax. Key component of benefits expense budgeting.",
+    "source": "nl-update",
+    "version": 2
+  },
+  {
+    "id": 7,
+    "timestamp": 1774845379.079309,
+    "table_name": "benefit_plan_options",
+    "column_name": "annual_employer_cost",
+    "field": "formula",
+    "old_value": "Total annual premium - annual_employee_cost",
+    "new_value": "(Total annual premium - annual_employee_cost) * 1.05",
+    "source": "nl-update",
+    "version": 2
+  },
+  {
+    "id": 8,
+    "timestamp": 1774845379.079673,
+    "table_name": "benefit_plan_options",
+    "column_name": "annual_employer_cost",
+    "field": "business_rules",
+    "old_value": [
+      "Employer contribution varies by client, plan, and coverage level",
+      "ACA affordability test: employee self-only contribution must be \u2264 9.12% of household income (2025 threshold)",
+      "Some employers use defined contribution model (flat $ amount regardless of plan)"
+    ],
+    "new_value": [
+      "Employer contribution varies by client, plan, and coverage level",
+      "ACA affordability test: employee self-only contribution must be \u2264 9.12% of household income (2025 threshold)",
+      "Some employers use defined contribution model (flat $ amount regardless of plan)",
+      "5% government tax applied to employer cost"
+    ],
+    "source": "nl-update",
+    "version": 2
+  },
+  {
+    "id": 9,
+    "timestamp": 1774845379.0801668,
+    "table_name": "benefit_plan_options",
+    "column_name": "annual_employer_cost",
+    "field": "lineage",
+    "old_value": {
+      "source_system": "Benefits Admin / Carrier rate tables",
+      "load_frequency": "Annual",
+      "transformation": "Calculated from total premium minus employee share"
+    },
+    "new_value": {
+      "source_system": "Benefits Admin / Carrier rate tables",
+      "load_frequency": "Annual",
+      "transformation": "Calculated from total premium minus employee share, with a 5% tax applied"
+    },
+    "source": "nl-update",
+    "version": 2
+  },
+  {
+    "id": 10,
+    "timestamp": 1774845379.080649,
+    "table_name": "benefit_plan_options",
+    "column_name": "annual_employer_cost",
+    "field": "used_in_metrics",
+    "old_value": [
+      "Per-employee-per-month (PEPM) cost",
+      "Total benefits liability",
+      "Employer cost trend YoY"
+    ],
+    "new_value": [
+      "Per-employee-per-month (PEPM) cost",
+      "Total benefits liability",
+      "Employer cost trend YoY"
+    ],
+    "source": "nl-update",
+    "version": 2
+  },
+  {
+    "id": 11,
+    "timestamp": 1774845379.081193,
+    "table_name": "benefit_plan_options",
+    "column_name": "annual_employer_cost",
+    "field": "relationships",
+    "old_value": [
+      "Paired with: annual_employee_cost",
+      "Dependent on: tax regulations"
+    ],
+    "new_value": [
+      "Paired with: annual_employee_cost",
+      "Dependent on: tax regulations"
+    ],
+    "source": "nl-update",
+    "version": 2
+  }
+]
