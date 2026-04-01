@@ -1,15 +1,16 @@
 import { useState } from 'react';
+import type { ReactNode } from 'react';
 import {
-  BookOpen, Database, Sparkles, History, Shield, Search,
+  BookOpen, Database, Sparkles, History, Search,
   ChevronDown, ChevronRight, ArrowRight, Layers, Pencil,
-  BarChart3, AlertTriangle, MessageSquare, Undo2
+  AlertTriangle
 } from 'lucide-react';
 
 type Section = {
   id: string;
   title: string;
   icon: any;
-  content: JSX.Element;
+  content: ReactNode;
 };
 
 export function UserManualPage() {
