@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { Database, MessageSquare, Plus, ArrowRight } from 'lucide-react';
+import { Database, MessageSquare, Plus, ArrowRight, BookOpen } from 'lucide-react';
 import { api } from '../api';
 
 const navItems = [
   { path: '/', label: 'Schema Browser', icon: Database },
+  { path: '/manual', label: 'User Manual', icon: BookOpen },
 ];
 
 export function Layout() {
